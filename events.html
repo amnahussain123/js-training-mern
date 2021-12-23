@@ -1,0 +1,34 @@
+<html>
+    <body>
+        <!-- onclick -->
+        <input type="text" id="name" placeholder="Enter your name">
+        <button type="button" id="btn" onclick="getName();">Click me</button><br><br>
+         <!-- onsubmit -->
+        <form method="post" onsubmit="myFunction();">
+            <input type="email" name="email" id="email" required placeholder="Email">
+            <input type="password" name="password" id="password" required placeholder="Password"> 
+            <input type="submit" value="Submit">
+        </form>
+        <!-- mouseOver -->
+        <a onmouseover="increase(this)" id="view" href="">Text on mouseOver</a>
+        <script>
+            function getName() {
+               var x= document.getElementById('name').value;
+               alert('Your name is '+ x);
+            }
+        </script>
+        <script>
+            function myFunction() {
+               var x= document.getElementById('email').value;
+               var y= document.getElementById('password').value;
+               alert('Email is '+ x+ ', password is '+ y);
+            }
+        </script>
+         <script>
+            function increase(content) {
+                alert(content.text);
+        
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,18 @@
+<html>
+    <body>
+        <div id="render"></div>
+        <script>
+             function palindrome(string){
+                 for(var i= 0; i<string.length/2; i++){
+                     if(string[i] != string[string.length-1-i]){
+                         return 'Not a palindrome'
+                     }else{
+                      return 'palindrome';
+                 }
+             }
+            }
+         var x= palindrome('BOB');
+              document.getElementById('render').innerHTML = x;       
+      </script>
+    </body>
+</html>

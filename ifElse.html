@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <p id="display"></p>
+        <script>
+             var num1 = parseFloat(prompt('Enter first number: '));
+             var operator = prompt('Enter operator ( either +, -, * or / ): ');  
+             var num2 = parseFloat(prompt('Enter second number: '));
+             if(operator == '+'){
+                document.getElementById('display').innerHTML= num1+num2;
+             }else if(operator == '-'){
+                document.getElementById('display').innerHTML= num1-num2;
+             }else if(operator == '/'){
+                document.getElementById('display').innerHTML= num1/num2;
+             }else if(operator == '*'){
+                document.getElementById('display').innerHTML= num1*num2;
+             }
+        </script>
+    </body>
+</html>
